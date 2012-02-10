@@ -29,6 +29,30 @@
 							JIRA
 							
 							
+							TODO: add image here - JB to send url
+
+							<script>
+								
+								var arr = [];
+								<#list test.results as result>
+									arr.push(${result.duration});
+								</#list>
+								
+								
+							</script>
+							
+							
+							<#list test.results as result>
+								<p>
+									<h2>${result.outcome}</h2>
+									${result.message!"no message"}
+									${result.dateExecuted}
+									
+									
+									
+								</p>
+							</#list>
+							
 							
 						</div>
 					</div>
